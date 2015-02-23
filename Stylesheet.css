@@ -1,0 +1,18 @@
+body{
+	Background-Color: 0x7a7a7a
+}
+
+.border{
+	Border: 10px black solid;
+	Text-Align: Center;
+	Background-Color: 0x7a7a7a;
+}
+
+.button{
+	border-radius: 5 px;
+}
+
+.netincome {
+	font: green;
+	font-weight: 7px;
+}

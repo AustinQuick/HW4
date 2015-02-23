@@ -4,12 +4,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel ="stylesheet" type="text/css" href="style.css"
+    <link rel="stylesheet" type="text/css" href="Stylesheet.css"/>
     <title></title>
 </head>
 <body>
-    <form id="Welcome" runat="server">
-    <div>
+    <body style="height: 500px">
+    <form id="form1" runat="server">
+    <div style="height: 425px; width: 225px;" class="border">
 
       
 
@@ -22,20 +23,20 @@
        </p>
 
         <p>Pre-Tax Deductions: <br />
-            <asp:TextBox ID="PreTax" runat="server"></asp:TextBox>
+            <asp:TextBox ID="PreTax" runat="server" ></asp:TextBox>
 
 
         </p>
 
       <p>After-Tax Deductions: <br />
-            <asp:TextBox ID="AfterTax" runat="server"></asp:TextBox>
+            <asp:TextBox ID="AfterTax" runat="server" ></asp:TextBox>
 
       </p>
-        <asp:Button ID="Calculate" runat="server" Text="Calculate" />
+        <asp:Button ID="Calculate" runat="server" Text="Calculate"  CssClass="button" />
 
 
      &nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Clear" runat="server" Text="Clear" />
+        <asp:Button ID="Clear" runat="server" Text="Clear"  CssClass="button" />
 
         <br />
         
@@ -43,7 +44,7 @@
 
        <p>
           Net Income:
-             <asp:Label ID="NetIncome" runat="server" CssClass="NetIncome"></asp:Label>
+             <asp:Label ID="NetIncome" runat="server" CssClass="netincome" ForeColor="#00CC00"></asp:Label>
        </p> 
 
 
