@@ -30,9 +30,20 @@ Partial Class _Default
         Dim postTax As Decimal = preTax - (preTax * taxRate) - m
 
         'Display the Results
-        NetIncome.txt = "$" & NetIncome.ToString
+        NetIncome.Text = "$" & NetIncome.ToString
 
 
+
+    End Sub
+
+    Protected Sub Clear_Click(sender As Object, e As EventArgs) Handles Clear.Click
+
+        'Delete all values
+        HourlyWage.Text = String.Empty
+        NumberOfHours.Text = String.Empty
+        PreTax.Text = String.Empty
+        AfterTax.Text = String.Empty
+        NetIncome.Text = String.Empty
 
     End Sub
 
