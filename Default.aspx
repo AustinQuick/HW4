@@ -40,7 +40,10 @@
         
         <br />
 
-        <asp:Label ID="NetIncome" runat="server" CssClass="NetIncome"></asp:Label>
+       <p>
+          Net Income:
+             <asp:Label ID="NetIncome" runat="server" CssClass="NetIncome"></asp:Label>
+       </p> 
 
 
      </div>

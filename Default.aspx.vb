@@ -25,12 +25,12 @@ Partial Class _Default
         End If
 
         'Calculate Deductions 
-        Dim preTax As Decimal = income - k
+        Dim pTax As Decimal = income - k
 
-        Dim postTax As Decimal = preTax - (preTax * taxRate) - m
+        Dim postTax As Decimal = pTax - (pTax * taxRate) - m
 
         'Display the Results
-        NetIncome.Text = "$" & NetIncome.ToString
+        NetIncome.Text = "$" & postTax.ToString
 
 
 
